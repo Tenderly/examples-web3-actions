@@ -1,0 +1,5 @@
+**/.DS_Store
+**/node_modules
+
+# Tenderly's actions out dir
+out
