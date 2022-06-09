@@ -1,0 +1,25 @@
+{
+    "name": "actions",
+    "scripts": {
+        "build": "tsc",
+        "ts-node": "ts-node",
+        "test": " ts-mocha **/*.spec.ts"
+    },
+    "devDependencies": {
+        "@tenderly/actions-test": "0.0.9",
+        "@types/chai": "^4.3.1",
+        "@types/mocha": "^9.1.1",
+        "@types/node": "^17.0.40",
+        "chai": "^4.3.6",
+        "mocha": "^10.0.0",
+        "npm": "^8.12.1",
+        "ts-mocha": "^10.0.0",
+        "ts-node": "^10.8.1",
+        "typescript": "^4.3.5"
+    },
+    "dependencies": {
+        "@tenderly/actions": "^0.0.7",
+        "ethers": "^5.6.5"
+    },
+    "private": true
+}

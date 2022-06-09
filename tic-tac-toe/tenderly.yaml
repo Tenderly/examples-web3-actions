@@ -1,0 +1,63 @@
+account_id: "nenad"
+project_slug: "w3a-examples"
+actions:
+  nenad/w3a-examples:
+    runtime: v1
+    sources: actions
+    specs:
+      newGame:
+        description: Respond to newGame event
+        function: ticTacToeActions:newGameAction
+        trigger:
+          type: transaction
+          transaction:
+            status:
+              - mined
+            filters:
+              - network: 3
+                eventEmitted:
+                  contract:
+                    address: 0x1eb7dbd296eb3fc08b2b6217d87e6bf3cb6e42df
+                  name: GameCreated
+      playerJoined:
+        description: Respond to player joining game
+        function: ticTacToeActions:playerJoinedAction
+        trigger:
+          type: transaction
+          transaction:
+            status:
+              - mined
+            filters:
+              - network: 3
+                eventEmitted:
+                  contract:
+                    address: 0x1eb7dbd296eb3fc08b2b6217d87e6bf3cb6e42df
+                  name: PlayerJoinedGame
+      playerMadeMove:
+        description: Respond to player making a move event
+        function: ticTacToeActions:playerMadeMoveAction
+        trigger:
+          type: transaction
+          transaction:
+            status:
+              - mined
+            filters:
+              - network: 3
+                eventEmitted:
+                  contract:
+                    address: 0x1eb7dbd296eb3fc08b2b6217d87e6bf3cb6e42df
+                  name: PlayerMadeMove
+      gameOver:
+        description: Respond to game over
+        function: ticTacToeActions:gameOverAction
+        trigger:
+          type: transaction
+          transaction:
+            status:
+              - mined
+            filters:
+              - network: 3
+                eventEmitted:
+                  contract:
+                    address: 0x1eb7dbd296eb3fc08b2b6217d87e6bf3cb6e42df
+                  name: GameOver

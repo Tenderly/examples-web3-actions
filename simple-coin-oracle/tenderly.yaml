@@ -1,0 +1,21 @@
+account_id: ""
+actions:
+  nenad/w3a-examples:
+    runtime: v1
+    sources: actions
+    specs:
+      coinOracle:
+        description: Swapit
+        function: coinOracle:coinPrice
+        trigger:
+          type: transaction
+          transaction:
+            status: 
+              - mined
+            filters:
+              - network: 3
+                eventEmitted:
+                  contract:
+                    address: 0x15AA485Ba52ddB7Ceb269b2090E45b6A0C42cC5f
+                  name: RequestCoinPrice
+project_slug: ""

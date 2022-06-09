@@ -1,0 +1,21 @@
+account_id: ""
+actions:
+  nenad/w3a-examples:
+    runtime: v1
+    sources: actions
+    specs:
+      uniswapNewPool:
+        description: Runs when a new swap is made on Uniswap
+        function: uniswapActions:onPoolCreatedEventEmitted
+        trigger:
+          type: transaction
+          transaction:
+            status:
+              - mined
+            filters:
+              - network: 1
+                eventEmitted: 
+                  contract: 
+                    address: 0xd849b2af570ffa3033973ea11be6e01b7ba661d9
+                  name: PoolCreated
+project_slug: ""
