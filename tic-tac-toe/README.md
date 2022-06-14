@@ -1,6 +1,7 @@
 
-# How to send a Discord message about a new Uniswap Pool?
+# How to How to Handle On-Chain Events?
 
+This example shows how to listen to on-chain events in Web3 Actions. Events are fired by a Smart Contract representing a tic-tac-toe game, and consumed by Web3 Actions, doing additional processing.
 
 ## Running the examples
 To run these examples, you need to have Tenderly CLI. If you haven't already, install [Tenderly CLI](https://github.com/Tenderly/tenderly-cli#installation). 
