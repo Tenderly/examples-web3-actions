@@ -1,6 +1,6 @@
 # Examples of Tenderly Web3 Actions
 
-Example repository for web3 actions, accompanying tutorials and how-to guides.
+Example repository for Web3 Actions, accompanying tutorials and how-to guides.
 
 ## Running the examples
 
