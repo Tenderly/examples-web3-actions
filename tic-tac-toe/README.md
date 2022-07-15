@@ -1,12 +1,26 @@
+# How to Handle On-Chain Events?
 
-# How to How to Handle On-Chain Events?
+This tutorial will teach you how to **create a serverless backend for your smart contract using Tenderly’s Web3
+Actions**. Web3 Actions allow you to run custom code in response to on-chain or off-chain events that are initiated by
+your smart contract.
 
-This example shows how to listen to on-chain events in Web3 Actions. Events are fired by a Smart Contract representing a tic-tac-toe game, and consumed by Web3 Actions, doing additional processing.
+To illustrate how Web3 Actions work, we will build a simple Tic-Tac-Toe game and deploy it to a test network. The smart
+contract will be responsible for maintaining the game state while Web3 Actions will be used to monitor changes to the
+game.
+
+**Whenever a specific event gets fired from the smart contract, Tenderly will execute your custom code in the form of a
+NodeJS project**. The results of the game and the game board will be printed to the console each time a player makes a
+move or when the game is over.
+
+## Tutorial and explanation
+
+Check out the tutorial and explanation in our [official documentation](https://docs.tenderly.co/web3-actions/how-to-handle-on-chain-events).
 
 ## Running the examples
-To run these examples, you need to have Tenderly CLI. If you haven't already, install [Tenderly CLI](https://github.com/Tenderly/tenderly-cli#installation). 
 
-Before you go on, you need to login with CLI, using your Tenderly credentials:
+To run these examples, you need to have Tenderly CLI. If you haven't already, install [Tenderly CLI](https://github.com/Tenderly/tenderly-cli#installation).
+
+Before you go on, you need to log in with CLI, using your Tenderly credentials:
 
 ```bash
 tenderly login
@@ -20,7 +34,7 @@ First `cd` into an example you're interested in and `cd actions`. Then run `npm 
 npm install
 ```
 
-### Test, Build, Deploy 
+### Test, Build, Deploy
 
 To build/deploy the actions, `cd` into example you're interested in and then run the CLI.
 
