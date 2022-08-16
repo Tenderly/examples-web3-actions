@@ -1,0 +1,16 @@
+{
+  "latest": [
+    {
+      "name": "Token",
+      "address": "0x4e97c71a44ef1b78a7caee159aa016be53e04c32",
+      "network": "ropsten",
+      "timestamp": "2022-08-13T08:01:06.305Z"
+    },
+    {
+      "name": "MultiSigWallet",
+      "address": "0x418ebb95eaa40c119408143056cad984c6129d45",
+      "network": "ropsten",
+      "timestamp": "2022-08-13T08:01:10.935Z"
+    }
+  ]
+}

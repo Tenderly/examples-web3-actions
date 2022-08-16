@@ -1,6 +1,8 @@
-account_id: ""
+# TODO: replace TENDERLY_USERNAME and TENDERLY_PROJECT_SLUG with proper values
+account_id: "TENDERLY_USERNAME"
+project_slug: "TENDERLY_PROJECT_SLUG"
 actions:
-  nenad/w3a-examples:
+  TENDERLY_USERNAME/TENDERLY_PROJECT_SLUG:
     runtime: v1
     sources: actions
     specs:
@@ -14,8 +16,7 @@ actions:
               - mined
             filters:
               - network: 1
-                eventEmitted: 
-                  contract: 
+                eventEmitted:
+                  contract:
                     address: 0xd849b2af570ffa3033973ea11be6e01b7ba661d9
                   name: PoolCreated
-project_slug: ""
