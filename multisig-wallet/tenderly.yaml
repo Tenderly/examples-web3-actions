@@ -1,0 +1,53 @@
+account_id: ""
+project_slug: ""
+actions:
+  # TODO: replace with prper values
+  TENDERLY_USERNAME/TENDERLY_PROJECT_SLUG:
+    runtime: v1
+    sources: web3-actions
+    specs:
+      multisig:
+        description: Acts when multisig event takes place
+        function: multisig:onAnEvent
+        trigger:
+          type: transaction
+          transaction:
+            status:
+              - mined
+            filters:
+              - network: 3
+                eventEmitted:
+                  name: TxSubmission
+                  contract:
+                    address: 0x418ebb95eaa40c119408143056cad984c6129d45
+              - network: 3
+                eventEmitted:
+                  name: TxConfirmation
+                  contract:
+                    address: 0x418ebb95eaa40c119408143056cad984c6129d45
+              - network: 3
+                eventEmitted:
+                  name: ConfirmationRevocation
+                  contract:
+                    address: 0x418ebb95eaa40c119408143056cad984c6129d45
+              - network: 3
+                eventEmitted:
+                  name: ExecuteTransaction
+                  contract:
+                    address: 0x418ebb95eaa40c119408143056cad984c6129d45
+      multisig-webhook:
+        description: Via Webhook
+        function: multisig:onHook
+        trigger:
+          type: webhook
+          wehbook:
+            authenticated: true
+      multisig-periodic:
+        description: Reminders
+        function: multisig:everyDay
+        trigger:
+          type: periodic
+          periodic:
+            # Supported values for interval are
+            # {5m, 10m, 15m, 30m, 1h, 3h, 6h, 12h, 1d}
+            interval: 5m

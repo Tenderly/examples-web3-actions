@@ -1,7 +1,8 @@
-account_id: "nenad"
-project_slug: "w3a-examples"
+# TODO: replace TENDERLY_USERNAME and TENDERLY_PROJECT_SLUG with proper values
+account_id: "TENDERLY_USERNAME"
+project_slug: "TENDERLY_PROJECT_SLUG"
 actions:
-  nenad/w3a-examples:
+  TENDERLY_USERNAME/TENDERLY_PROJECT_SLUG:
     runtime: v1
     sources: actions
     specs:
