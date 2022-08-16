@@ -77,12 +77,12 @@ the [Ropsten testnet](https://ropsten.etherscan.io/).
 source demo-setup-scripts/init-env-hardhat.sh
 ```
 
-1. **▶️ Action**: Deploy the Contracts to Ropsten. Use shorthand script `npm run deploy:ropsten`. Hardhat project is set
+1. **▶️ Action**: Deploy the Contracts to Ropsten. Use shorthand script `yarn deploy:ropsten`. Hardhat project is set
    up
    with [Tenderly Hardhat Plugin automatic contract verification](https://github.com/Tenderly/hardhat-tenderly#automatic-verification)
-   so your contracts are verified automatically as they're deployed
+   so your contracts are verified automatically as they're deployed. The contracts are vefified privately,see [hardhat.config.ts](hardhat.config.ts).
 2. **▶️ Action**: Run a first set of transactions: submit 1 tx to multisig, do two approvals and optionally execute it.
-   Use the script `npm run multisig-play:ropsten`.
+   Use the script `yarn multisig-play:ropsten`.
 3. **▶️ Action**: Copy the address of Multisig from deployment step (also found in `deployments.json`) and paste it
    into `tenderly.yaml` in place of `MULTISIG_ADDRESS` placeholder.
 
@@ -91,8 +91,8 @@ source demo-setup-scripts/init-env-hardhat.sh
 Before deploying the action to Tenderly, you can test it out locally.
 
 ```bash
-cd web3-actions
-npm run multisig-local
+source demo-setup-scripts/init-env-hardhat.sh
+yarn multisig-local
 ```
 
 👾 You should get several Discord messages and see some meaningful output. If all went well, you can go on and deploy the
