@@ -1,0 +1,29 @@
+{
+  "network": "3",
+  "blockHash": "0xb1f0d051f2deef91cdec639898af1288f5f17d3ace60f34e16e88c86ceac6a40",
+  "blockNumber": 12766265,
+  "hash": "0x7faeb8641d16ad5179ed0d4fb7b478311b85ab41e186c8180d23357f5e9a675f",
+  "from": "0xF7dDedc66B1d482e5C38E4730B3357d32411e5Dd",
+  "to": "0x418EBb95EAa40c119408143056CaD984C6129d45",
+  "logs": [
+    {
+      "address": "0x418EBb95EAa40c119408143056CaD984C6129d45",
+      "topics": [
+        "0x5445f318f4f5fcfb66592e68e0cc5822aa15664039bd5f0ffde24c5a8142b1ac",
+        "0x000000000000000000000000f7ddedc66b1d482e5c38e4730b3357d32411e5dd",
+        "0x0000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "data": "0x"
+    }
+  ],
+  "input": "0xee22610b0000000000000000000000000000000000000000000000000000000000000000",
+  "value": "0x0",
+  "nonce": "0x1e6",
+  "gas": "0x11067",
+  "gasUsed": "0x10dc6",
+  "cumulativeGasUsed": "0xe88ce",
+  "gasPrice": "0x4190aaf1",
+  "gasTipCap": "0x4190aaea",
+  "gasFeeCap": "0x4190aaf2",
+  "alertId": null
+}
