@@ -21,6 +21,8 @@ To run the example, you can either use [pre-deployed and Tenderly-verified contr
 or spare some time to [deploy your own contracts](#1b-deploy-your-own-contracts). Follow the rest of instructions to run
 the example.
 
+Before you run the examples, you need to change the `REPLACE_ME` placeholders with your own values.
+
 ## 0: Configuration for Web3 Actions project
 
 **▶️ Action** First thing's first, install npm dependencies and ⏳.
