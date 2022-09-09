@@ -35,8 +35,8 @@ const config: HardhatUserConfig = {
     },
   },
   tenderly: {
-    project: "demo-encode-eth-safari",
-    username: "nenad",
+    project: "REPLACE_ME",
+    username: "REPLACE_ME",
     privateVerification: true,
   },
 };

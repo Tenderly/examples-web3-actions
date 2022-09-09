@@ -15,11 +15,11 @@ import { tenderlyApi } from "./tenderly-api";
 const KEY_STORE_SUBMITTED_TX = "multisig.submitted";
 
 /** TODO: Update with proper username, project etc */
-const TENDERLY_USERNAME = "nenad";
-const TENDERLY_PROJECT_SLUG = "demo-encode-eth-safari";
+const TENDERLY_USERNAME = "REPLACE_ME";
+const TENDERLY_PROJECT_SLUG = "REPLACE_ME";
 
-const MULTISIG_WALLET_ADDRESS = "0xcea103d9d4040acd684e0e2f2d992ff7d3ea62c4";
-const MULTISIG_TOKEN_ADDRESS = "0x453dd88556bcfad1063ea0efa8c6155c2f22ee7d";
+const MULTISIG_WALLET_ADDRESS = "0x6794B4635e094982Ed890F8b5fD57a45227d4a98";
+const MULTISIG_TOKEN_ADDRESS = "0x945B7C7178abd5936DB09186B58A789D8308B876";
 
 type SubmittedTx = {
   owner: string;

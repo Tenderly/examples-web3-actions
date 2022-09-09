@@ -43,8 +43,8 @@ The contracts are deployed on **Ropsten** at the follwing addresses:
 
 | Contract                                                                                                    | Address                                      |
 | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
-| [MultisigWallet](https://dashboard.tenderly.co/contract/ropsten/0xcea103d9d4040acd684e0e2f2d992ff7d3ea62c4) | `0xcea103d9d4040acd684e0e2f2d992ff7d3ea62c4` |
-| [Token](https://dashboard.tenderly.co/contract/ropsten/0x453dd88556bcfad1063ea0efa8c6155c2f22ee7d)          | `0x453dd88556bcfad1063ea0efa8c6155c2f22ee7d` |
+| [MultisigWallet](https://dashboard.tenderly.co/contract/ropsten/0x6794b4635e094982ed890f8b5fd57a45227d4a98) | `0x6794b4635e094982ed890f8b5fd57a45227d4a98` |
+| [Token](https://dashboard.tenderly.co/contract/ropsten/0x945b7c7178abd5936db09186b58a789d8308b876)          | `0x945b7c7178abd5936db09186b58a789d8308b876` |
 
 **▶️ Action**: Add the contracts (addresses and links below) to your project in Tenderly. Click the links in the table to open the Dashboard and then click "Add to Project". As soon as you add the
 contracts, the transactions will be shown in **Transactions** page.
@@ -53,10 +53,10 @@ Transactions executed on these contracts:
 
 | Action    | TX Hash                                                              |
 | --------- | -------------------------------------------------------------------- |
-| Submit    | `0xcd0aed038f36eab7c5f59ccd735ff761581c1d7b311cad80fa9cc3ace370aa5f` |
-| Confirm 1 | `0x8fec5412bb208063f71b20c7757252b3719c7daeccaee4abc448302c13de39bd` |
-| Confirm 2 | `0x1c0e79c1e4647844cc0a235de61119f37fa498e80a1473d633468b66ce8fb198` |
-| Execute   | `0x8db8cffee3d94f2fd44e85c0727c2af45fe845e7f6ba3594e279feb0d205aec3` |
+| Submit    | `0xa71c273fd5e3b92b4ade35d284995504aed53fb3e6673fe4f5fcec045c75e77a` |
+| Confirm 1 | `0x6f08c6803a470039b73072a9dc34d69dcd0261fab29ac4cbcb02bb87daf96aa9` |
+| Confirm 2 | `0xf4c527efb784ac58b8c7a4483f00a07a687ecc4b8f38c6cbf9f95dd0f695cfb5` |
+| Execute   | `0x9ae0ec902fa209c60ffa10ecaf0446dbccd36a02e33d18f16bc182e57de94ac4` |
 
 You can use these TX hashes to run Web3 Actions manually from the Dashboard. Skip
 to [Deploying Web3 Actions](#3-deploying-web3-actions).
