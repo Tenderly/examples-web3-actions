@@ -1,0 +1,50 @@
+account_id: ""
+actions:
+  nenad/demo-encode-eth-safari:
+    runtime: v1
+    sources: web3-actions
+    specs:
+      multisig:
+        description: Acts when multisig event takes place
+        function: multisig:onAnEvent
+        trigger:
+          transaction:
+            filters:
+              - eventEmitted:
+                  contract:
+                    address: 0xceA103d9D4040aCd684E0E2f2d992ff7d3Ea62c4
+                  name: TxSubmission
+                network: 3
+              - eventEmitted:
+                  contract:
+                    address: 0xceA103d9D4040aCd684E0E2f2d992ff7d3Ea62c4
+                  name: TxConfirmation
+                network: 3
+              - eventEmitted:
+                  contract:
+                    address: 0xceA103d9D4040aCd684E0E2f2d992ff7d3Ea62c4
+                  name: ConfirmationRevocation
+                network: 3
+              - eventEmitted:
+                  contract:
+                    address: 0xceA103d9D4040aCd684E0E2f2d992ff7d3Ea62c4
+                  name: ExecuteTransaction
+                network: 3
+            status:
+              - mined
+          type: transaction
+      # multisig-periodic:
+      #   description: Reminders
+      #   function: multisig:everyDay
+      #   trigger:
+      #     periodic:
+      #       interval: 1d
+      #     type: periodic
+      multisig-webhook:
+        description: Via Webhook
+        function: multisig:onHook
+        trigger:
+          type: webhook
+          wehbook:
+            authenticated: true
+project_slug: ""

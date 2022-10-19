@@ -3,3 +3,4 @@
 
 # Tenderly's actions out dir
 out
+.env
